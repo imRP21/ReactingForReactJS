@@ -21,8 +21,9 @@ function App() {
     //   </header>
     // </div>
 
-    <div>
-      <h1>Hello, World!</h1>
+    <div className="hello-container">
+      <h1 className="hello-title">Hello, World!</h1>
+      <p className="hello-subtitle">Welcome to my first React App!</p>
     </div>
   );
 }
