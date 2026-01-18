@@ -27,3 +27,21 @@ body {
   margin-top: 0;
   letter-spacing: 1px;
 }
+
+.calc-button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: 2px solid rgba(37, 99, 235, 0.6);
+  border-radius: 0.5rem;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.6s ease, border-color 0.6s ease, color 0.6s ease;
+}
+
+.calc-button:hover {
+  background: #2563eb;
+  color: #f8fafc;
+  border-color: #2563eb;
+}
