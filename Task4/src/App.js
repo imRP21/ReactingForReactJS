@@ -10,7 +10,7 @@ import Todo from './pages/Todo';
 // 1. <BrowserRouter>: enables routing.
 // 2. <nav> with <Link>: the navigation bar (shared navigation - visible on all pages).
 // 3. <Routes> + <Route>: defines which component to render for each URL path (mapping of URLs to components).
-// The page components (Home, Todo, etc.) are the content that swaps based on the URL. The shell (nav, header, footer) remains unchanged across pages.
+// The page components (Home, Todo, etc.) are the content that gets swapped based on the URL. The shell (nav, header, footer) remains unchanged across pages.
 function App() {
   return (
     // BrowserRouter: Wraps your app to enable routing. Must be at the top.

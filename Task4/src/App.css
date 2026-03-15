@@ -1,3 +1,21 @@
+/* 
+ * Task3 had everything in App.css → worked fine for single page app (everything in App.js). 
+ * Now with multiple pages (pages.Todo, pages.Home, etc.), styles are shared/messy and individual pages look unstyled.
+ * To overcome this, we have these approaches:
+ *   1. CSS Modules: Scoped CSS (.module.css) for each component.
+ *   2. Styled Components: CSS written inside JS files, tied to each component.
+ *   3. Tailwind CSS: Utility classes directly in JSX (className="p-4 text-blue-500").
+ *   4. Sass/SCSS: CSS with variables, nesting, mixins — better organization.
+ * We're going with option 1 (CSS Modules) for simplicity and better separation of concerns (best fit for learning). Each page/component will have its own .module.css file, ensuring styles are scoped and easier to maintain.
+ * Task4/src/
+ *   - pages/
+ *     - Home.js
+ *     - Home.module.css   (scoped to Home only)
+ *     - Todo.js
+ *     - Todo.module.css   (scoped to Todo only)
+ *   - App.js
+ *   - App.css             (shared global styles used for nav, body, layout etc.)
+ */
 body {
   margin: 0;
   padding: 0;
